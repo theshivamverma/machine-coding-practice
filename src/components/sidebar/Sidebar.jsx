@@ -95,21 +95,21 @@ function Sidebar() {
   }, [products]);
 
   return (
-    <div>
+    <div className="sidebar">
       <h1>Sort and Filter</h1>
-      <div>
-        <p>Sort by Price</p>
-        <div>
+      <div className="filtercard">
+        <p className="filtercard-header">Sort by Price</p>
+        <div className="">
           <label>High to Low</label>
           <input
             checked={sort === "HTOL"}
             name="sort"
             type="radio"
             onChange={() => filterDispatch({ type: "HIGH_TO_LOW" })}
-          />{" "}
+          />
           <br />
         </div>
-        <div>
+        <div className="">
           <label>Low to High</label>
           <input
             checked={sort === "LTOH"}
@@ -119,8 +119,8 @@ function Sidebar() {
           />
         </div>
       </div>
-      <div>
-        <p>Filter by brand</p>
+      <div className="filtercard">
+        <p className="filtercard-header">Filter by brand</p>
         {displayBrands.map((brandName) => {
           return (
             <div>
@@ -136,8 +136,8 @@ function Sidebar() {
           );
         })}
       </div>
-      <div>
-        <p>Filter by size</p>
+      <div className="filtercard">
+        <p className="filtercard-header">Filter by size</p>
         {displaySizes.map((size) => {
           return (
             <div>
@@ -153,8 +153,8 @@ function Sidebar() {
           );
         })}
       </div>
-      <div>
-        <p>Ideal for</p>
+      <div className="filtercard">
+        <p className="filtercard-header">Ideal for</p>
         {displayIdealFor.map((type) => {
           return (
             <div>

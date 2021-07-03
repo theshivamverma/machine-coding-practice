@@ -19,7 +19,7 @@ function App() {
     if(sort === "LTOH"){
       return products.sort((a, b) => a.price - b.price)
     }
-    return products
+    return products;
   }
 
   function getFilteredData(brands, sizes, idealFor, productData){

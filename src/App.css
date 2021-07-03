@@ -1,6 +1,27 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.App {
+  padding: 2rem;
+  padding-left: 25%;
+}
 
+.sidebar{
+  width: 23% !important;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  padding: 2rem;
+}
 
+.product-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
